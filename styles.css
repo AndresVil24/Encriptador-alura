@@ -1,0 +1,131 @@
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6f7ff; /* Fondo de la página con un tono claro de azul */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column; /* Para apilar el header y el container */
+}
+
+/* Header */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background-color: #007acc; /* Fondo azul para el aviso */
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%;
+    text-align: left;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+}
+
+/* Sección de entrada */
+.input-section, .output-section {
+    padding: 20px;
+    flex: 1;
+    position: relative;
+}
+
+.input-section {
+    background-color: #e6f7ff; /* Fondo de la sección de entrada con un tono claro de azul */
+    text-align: center;
+}
+
+/* Estilo del texto centrado */
+.center-text {
+    position: absolute;
+    top: 6.5%; /* Ajustado para que esté un poco más arriba */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    color: rgba(0, 0, 0, 0.1); /* Color negro con transparencia */
+    font-weight: bold;
+    pointer-events: none; /* Hace que el texto no interfiera con los clics */
+}
+
+/* Estilo del textarea */
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 2px solid #007acc; /* Borde del textarea con un tono azul */
+    border-radius: 4px;
+    resize: none;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Opciones de texto */
+.options p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Botones */
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #007acc; /* Fondo del botón con un tono azul */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005c99; /* Fondo del botón al pasar el mouse con un tono más oscuro de azul */
+}
+
+/* Sección de salida */
+.output-section {
+    background-color: #ffffff; /* Fondo blanco para la sección de salida */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.output-section img {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+#output-text {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+}
+

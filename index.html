@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <p>Creado por Andres Felipe Villegas para Alura Latam</p>
+    </div>
+    <div class="container">
+        <div class="input-section">
+            <div class="center-text">Alura</div> <!-- Texto transparente añadido -->
+            <h1>Ingrese el texto aquí</h1>
+            <textarea id="input-text" placeholder="Escribe aquí..."></textarea>
+            <div class="options">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="buttons">
+                <button id="encrypt-button">Encriptar</button>
+                <button id="decrypt-button">Desencriptar</button>
+            </div>
+        </div>
+        <div class="output-section">
+            <img src="no_message.png" alt="No message found">
+            <p id="output-text">Ningún mensaje fue encontrado</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
